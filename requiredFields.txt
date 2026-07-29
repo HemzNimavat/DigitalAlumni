@@ -1,0 +1,101 @@
+1. Alumni Profile
+
+Full Name
+
+Gender
+
+Date of Birth
+
+Contact Information (Email, Phone, Address)
+
+LinkedIn/GitHub/Other social profiles
+
+Graduation Year & Batch
+
+Degree, Course, Specialization
+
+Enrollment & Alumni ID (Unique Identifier)
+
+Current Occupation (Job Title, Company, Location)
+
+Career History (Previous roles, companies, duration)
+
+
+2. Academic Records
+
+Roll Number / Enrollment Number
+
+Department / Faculty
+
+CGPA / Grades (optional, depending on privacy)
+
+Certificates / Achievements
+
+
+
+
+Basic Event Info
+	
+	event_id (Unique identifier)
+	
+	// Event poster That is the image of event registration page
+
+	title (Event name, e.g., "Alumni Meet 2025")
+
+	description (Details about the event)
+	
+	event_type (Seminar, Webinar, Alumni Meet, Workshop, Fundraising, Job Fair, etc.)
+
+	organizer (Admin/Institution Department hosting it)
+
+
+	Date & Time
+
+		 start_date
+
+ 		 end_date
+
+ 		 start_time
+
+		 end_time
+
+
+
+	Location / Mode
+
+		venue (If offline – hall, campus, city)
+
+		mode (Online / Offline / Hybrid)
+
+
+Filters for Users
+		By Department/Batch → Events only for their dept/year
+
+		By Tags/Keywords → “Networking”, “Internship”, “Fundraising”
+
+		By Organizer → Department / Alumni Association
+
+
+
+
+
+
+
+
+step 1 :- 
+create databse in phpmyadmin
+
+step 2 :-
+
+click on create table and then select sql on the top and copy and paste below code in the query.
+
+
+
+CREATE TABLE `user_form` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4
